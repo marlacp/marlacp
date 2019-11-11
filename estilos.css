@@ -159,13 +159,109 @@ h2 {
 border:0.8px solid rgb(21, 153, 126);
 }
 
-/**********************************************************************************/
+/********************************Responsive desktop tamaño pequeño*********************************************/
 
 
-/* @media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  
+/************* SLIDE **************************/
 
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  }
+  
+  .contenedor img{
+  width: 150%;
+  
+  }
+  
+  .centrado {
+  font-size: 100%;
+  }
+  /************************************/
+  .container {
+    /* border: 1px solid red;  */
+    width: 250px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+  }
+  
+  /* ************************* header ******************************** */
+  
+  .header {
+    height: 120px;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 100%;
+  }
+  
+  
+  ol,
+  ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  
+  
+  .header a {
+    color: rgb(130, 130, 130);
+    text-decoration: none;
+  }
+  
+  
+  
+  .header ol {
+    display: flex;
+    height: inherit;
+  }
+  
+  .header ol li {
+    height: inherit;
+    }
+  
+  .header a {
+    padding: 0 4px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    font-size: 90%;
+  }
+  
+  
+  
+  /**********************HERO *********************/
+  
+  
+  .hero-container {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .hero h2, h3, p, a {
+    font-size: medium;
+  }
+  
+  .post-img img{
+    
+    display: block;
+    height: 90%;
+    overflow: hidden;
+    margin: 0px;
+    position: relative;
+    width: 250%;
+    right: 150px;
+    
+  }
 
-} */
+}
 
 /*************** responsive celular **********************/
 
