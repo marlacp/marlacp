@@ -185,12 +185,12 @@ width: 150%;
 }
 
 .centrado {
-font-size: 150%;
+font-size: 100%;
 }
 /************************************/
 .container {
   /* border: 1px solid red;  */
-  width: 450px;
+  width: 250px;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -202,19 +202,14 @@ font-size: 150%;
 /* ************************* header ******************************** */
 
 .header {
-  /* background-color: white; */
-  display: flex;
-  height: 150px;
+  height: 120px;
   align-items: center;
-  justify-content: space-between;
 }
 
 .logo img {
-  width: 100px;
+  width: 100%;
 }
-.menu {
-  height: inherit;
-}
+
 
 ol,
 ul {
@@ -229,10 +224,6 @@ ul {
   text-decoration: none;
 }
 
-/* aqui ponemos al menu la misma altura del header */
-.menu {
-  height: inherit;
-}
 
 
 .header ol {
@@ -242,34 +233,38 @@ ul {
 
 .header ol li {
   height: inherit;
-}
-/* separamos las listas y centramos */
+  }
+
 .header a {
-  display: flex;
-  align-items: center;
-  height: inherit;
   padding: 0 4px;
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
   font-size: 90%;
 }
 
+
+
 /**********************HERO *********************/
 
 
 .hero-container {
   display: grid;
-  grid-template-columns: 450px;
+  grid-template-columns: 250px;
   grid-template-rows: repeat(2, 1fr);
 }
 .hero h2, h3, p, a {
-  font-size: small;
+  font-size: medium;
 }
 
 .post-img img{
   
   display: block;
-  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  margin: 0px;
+  position: relative;
+  width: 250%;
+  right: 150px;
   
 }
 }
@@ -287,5 +282,4 @@ ul {
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
-  font-size: x-large;
 }
