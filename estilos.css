@@ -1,22 +1,217 @@
 body {
-    font-family: Arial;
-    margin: 0;
-    font-weight: normal;
+  font-family: Arial;
+  margin: 0;
+  font-weight: normal;
 
-  }
+}
 
 
+/***********RESPONSIVE DESKTOP **********/
+
+@media screen and (min-width: 769px) and (max-width: 2000px){
+
+/*************************** slide ***************************/
+
+.slideshow-container{
+position:relative;
+margin:auto;
+/* justify-content: center; */
+}
+
+.contenedor img{
+width: 100%;
+}
+
+.centrado {
+font-size: x-small;
+}
+.container {
+  /* border: 1px solid red;  */
+  width: 800px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
 
   /* ************************* header ******************************** */
 
 .header {
+/* background-color: white; */
+display: flex;
+height: 90px;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo img {
+width: 130px;
+}
+.menu {
+height: inherit;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.header a {
+color: rgb(130, 130, 130);
+text-decoration: none;
+}
+
+/* aqui ponemos al menu la misma altura del header */
+.menu {
+height: inherit;
+}
+
+
+.header ol {
+display: flex;
+height: inherit;
+}
+
+.header ol li {
+height: inherit;
+}
+/* separamos las listas y centramos */
+.header a {
+display: flex;
+align-items: center;
+height: inherit;
+padding: 0 10px;
+font-family: 'Fjalla One', sans-serif;
+font-weight: normal;
+font-size: 80%;
+}
+/*******************************************/
+.hero-container{
+  display: grid;
+  grid-template-columns: repeat(7, 123.6px);
+  grid-template-rows: repeat(4, 90px);
+  grid-gap: 5px;
+  height: 65vh;
+  grid-auto-rows: 50px 50px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.hero {
+  /* border: 1px solid red; */
+  grid-column: 1 /5;
+  grid-row: 1/ -1;
+}
+
+.image {
+  /* border: 1px solid red; */
+  grid-column: 5 /8;
+  grid-row: 1/ -1;
+  margin: 0;
+}
+
+.post-img img{
+  
+display: block;
+height: 100%;
+overflow: hidden;
+margin: 0px;
+position: relative;
+right: 99px;
+
+}
+}
+
+h2,
+h3 {
+  color: rgb(54, 54, 54);
+}
+p{
+  color:  rgb(130, 130, 130);
+  font-size: small;
+}
+
+.hero a {
+  color: rgb(21, 153, 126);
+  
+}
+
+hr{
+  color: rgb(21, 153, 126);
+}
+
+a {
+  list-style: none;
+  text-align: center;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+.hrcolor{
+border:0.8px solid rgb(21, 153, 126);
+}
+
+/**********************************************************************************/
+
+
+/* @media screen and (min-width: 481px) and (max-width: 768px) {
+
+
+} */
+
+/*************** responsive celular **********************/
+
+@media screen and (max-device-width : 760px) {
+
+/************* SLIDE **************************/
+
+.contenedor{
+position: relative;
+display: inline-block;
+text-align: center;
+}
+
+.contenedor img{
+width: 150%;
+
+}
+
+.centrado {
+font-size: 150%;
+}
+/************************************/
+.container {
+  /* border: 1px solid red;  */
+  width: 450px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
+/* ************************* header ******************************** */
+
+.header {
   /* background-color: white; */
   display: flex;
-  height: 90px;
+  height: 150px;
   align-items: center;
   justify-content: space-between;
 }
 
+.logo img {
+  width: 100px;
+}
 .menu {
   height: inherit;
 }
@@ -53,142 +248,44 @@ ul {
   display: flex;
   align-items: center;
   height: inherit;
-  padding: 0 10px;
+  padding: 0 4px;
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
-  font-size: 80%;
+  font-size: 90%;
 }
 
-/*************************** slide ***************************/
+/**********************HERO *********************/
 
-.slideshow-container{
-    position:relative;
-    margin:auto;
-    /* justify-content: center; */
-   }
 
-/**********************hero******************************/
-
-@media screen and (min-width: 769px) and (max-width: 2000px){
-.hero-container{
-    display: grid;
-    grid-template-columns: repeat(7, 123.6px);
-    grid-template-rows: repeat(4, 90px);
-    grid-gap: 5px;
-    height: 65vh;
-    grid-auto-rows: 50px 50px;
-    padding: 0;
-    margin: 0;
-
+.hero-container {
+  display: grid;
+  grid-template-columns: 450px;
+  grid-template-rows: repeat(2, 1fr);
 }
-
-.hero {
-    /* border: 1px solid red; */
-    grid-column: 1 /5;
-    grid-row: 1/ -1;
-}
-
-.image {
-    /* border: 1px solid red; */
-    grid-column: 5 /8;
-    grid-row: 1/ -1;
-    margin: 0;
+.hero h2, h3, p, a {
+  font-size: small;
 }
 
 .post-img img{
-    
+  
   display: block;
-  height: 100%;
-  overflow: hidden;
-  margin: 0px;
-  position: relative;
-  right: 99px;
+  width: 100%;
   
 }
 }
-
-h2,
-h3 {
-    color: rgb(54, 54, 54);
-}
-p{
-    color:  rgb(130, 130, 130);
-    font-size: small;
-}
-
-.hero a {
-    color: rgb(21, 153, 126);
-    
-}
-
-hr{
-    color: rgb(21, 153, 126);
-}
-
-a {
-    list-style: none;
-    text-align: center;
-}
-
-h2 {
-    font-size: 150%;
-}
-
-.hrcolor{
-  border:0.8px solid rgb(21, 153, 126);
-}
-
-@media screen and (max-width: 768px) {
-  .hero-container {
-    display: grid;
-    grid-template-columns: 400px;/*repeat(1, 1fr);*/
-    grid-template-rows: repeat(2, 1fr);
-  }
-  .hero h2, h3, p, a {
-    font-size: x-small;
-  }
-
-  .post-img img{
-    
-    display: block;
-    width: 100%;
-    
-  }
-
-}
 /********************* texto encima de la imagen******************/
 .contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
 
 .centrado{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
-    font-size: x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: x-large;
 }
-
-@media screen and (max-width: 768px) {
-    .centrado {
-        font-size: x-small;
-    }
-
-  }
-
-/*******************container ****************/
-
-  .container {
-    /* border: 1px solid red;  */
-    width: 800px;
-    margin: 0 auto;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    height: inherit;
-    flex-wrap: inherit;
-  }
