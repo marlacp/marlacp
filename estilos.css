@@ -379,3 +379,9 @@ ul {
   color: white;
   font-weight: bold;
 }
+
+@media screen and (max-width: 266px) {
+  .centrado {
+    font-size: 50%;
+    }
+}
