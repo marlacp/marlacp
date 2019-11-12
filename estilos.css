@@ -276,12 +276,12 @@ text-align: center;
 }
 
 .contenedor img{
-width: 150%;
+width: 100%;
 
 }
 
 .centrado {
-font-size: 100%;
+font-size: 70%;
 }
 /************************************/
 .container {
@@ -332,7 +332,7 @@ ul {
   }
 
 .header a {
-  padding: 0 4px;
+  padding: 0 6px;
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
   font-size: 90%;
